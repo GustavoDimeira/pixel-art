@@ -1,14 +1,14 @@
 function pintar(eventoDeOrigem) {
   const div = eventoDeOrigem.target;
   const selecionado = document.getElementsByClassName('selected')[0];
-  let cor = selecionado.classList[1];
+  const cor = selecionado.classList[1];
   div.style.backgroundColor = cor;
 }
 
 for (let x = 0; x < 25; x += 1) {
   const pixel = document.createElement('div');
   pixel.classList = 'pixel';
-  pixel.addEventListener('click', pintar)
+  pixel.addEventListener('click', pintar);
   const pai = document.getElementById('pixel-board');
   pai.appendChild(pixel);
 }
@@ -23,7 +23,7 @@ function addselected(eventoDeOrigem) {
   blue.classList.remove('selected');
   red.classList.remove('selected');
   green.classList.remove('selected');
-  let liClicada = eventoDeOrigem.target;
+  const liClicada = eventoDeOrigem.target;
   liClicada.classList.add('selected');
 }
 
