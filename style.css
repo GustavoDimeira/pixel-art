@@ -1,31 +1,36 @@
-div {
-  padding: 0px;
-  margin: 0px;
+* {
+  text-align: center;
 }
-.a {
+.black {
   background-color: black;
 }
-.b {
+
+.blue {
   background-color: blue;
 }
-.c {
+
+.red {
   background-color: red;
 }
-.d {
+
+.green {
   background-color: green;
 }
+
 .color {
   border: solid 1px black;
-  margin: 5px;;
-  padding: 60px;
+  margin: 5px;
+  padding: 40px;
   display: inline-block;
 }
+
 #pixel-board {
-  width: 210px;
+  width: 410px;
 }
+
 .pixel {
   border: 1px solid black;
   display: inline-block;
   background-color: white;
-  padding: 20px;
+  padding: 40px;
 }

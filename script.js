@@ -1,6 +1,14 @@
+
+function pintar (eventoDeOrigem) {
+  let div = eventoDeOrigem.target;
+  let selecionado = document.getElementsByClassName('selected')[0];
+  div.style.backgroundColor = selecionado.classList[1];
+}
+
 for (let x = 0; x < 25; x += 1) {
 let pixel = document.createElement('div');
 pixel.classList = 'pixel';
+pixel.addEventListener('click', pintar)
 let pai = document.getElementById('pixel-board');
 pai.appendChild(pixel);
 }
@@ -18,7 +26,8 @@ function addselected (eventoDeOrigem) {
   let liClicada = eventoDeOrigem.target;
   liClicada.classList.add('selected');
  }
-black.addEventListener('click',addselected);
-blue.addEventListener('click',addselected);
-red.addEventListener('click',addselected);
-green.addEventListener('click',addselected);
+
+black.addEventListener('click', addselected);
+blue.addEventListener('click', addselected);
+red.addEventListener('click', addselected);
+green.addEventListener('click', addselected);
