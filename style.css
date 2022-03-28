@@ -1,0 +1,18 @@
+.a {
+  background-color: black;
+}
+.b {
+  background-color: blue;
+}
+.c {
+  background-color: red;
+}
+.d {
+  background-color: green;
+}
+.color {
+  border: solid 1px black;
+  margin: 5px;;
+  padding: 60px;
+  display: inline-block;
+}
